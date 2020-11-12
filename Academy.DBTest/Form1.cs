@@ -48,6 +48,7 @@ namespace Academy.DBTest
 
         private void lst_clienti_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //prova
             string item = this.lst_clienti.SelectedItem.ToString();
             string[] splittedString = item.Split(' ');
             int ID = Int32.Parse(splittedString[0]);
