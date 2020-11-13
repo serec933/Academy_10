@@ -64,8 +64,8 @@ namespace Academy.Esercitazione
         {
             DateTime today = new DateTime(2020, 11, 13);
             List<ProdottoInOfferta> lista_prodotti = new List<ProdottoInOfferta>();
-            int count = 0;
-            while (count < 3)
+
+            for (int i = 0; i<1; i++)
             {
                 Console.WriteLine("Inserisci la descrizione del prodotto, il prezzo, lo sconto e il codice divisi da spazio: ");
                 string line = Console.ReadLine();
@@ -113,11 +113,11 @@ namespace Academy.Esercitazione
                     lista_prodotti.Add(P_off);
                 }
 
-                count++;
             }
-            foreach(ProdottoInOfferta p in lista_prodotti)
+
+            foreach (ProdottoInOfferta p in lista_prodotti)
             {
-                if (p.Offerta())
+                if (p.IsInOfferta())
                 {
                     Console.WriteLine("IL PRODOTTO {0} è IN OFFERTA", p.Descrizione);
                 }
