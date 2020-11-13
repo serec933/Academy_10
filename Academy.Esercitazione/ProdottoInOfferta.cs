@@ -17,9 +17,24 @@ namespace Academy.Esercitazione
             this.dataFine = fine;
             this.dataInizio = inizio;
         }
-        public bool Offerta(DateTime today)
+        public ProdottoInOfferta(string descrip, double price, double sale, DateTime inizio, DateTime fine) : base(descrip, price, sale)
         {
-            return (today > dataInizio & today < dataFine);
+            this.Descrizione = descrip;
+            this.Prezzo = price;
+            this.Sconto = sale;
+            this.dataFine = fine;
+            this.dataInizio = inizio;
+        }
+        public ProdottoInOfferta(string descrip, DateTime inizio, DateTime fine) : base(descrip)
+        {
+            this.Descrizione = descrip;
+            this.dataFine = fine;
+            this.dataInizio = inizio;
+        }
+        public bool Offerta()
+        {
+            DateTime today = DateTime.Now;
+            return (today >= dataInizio & today <= dataFine.AddDays(1));
         }
     }
 }

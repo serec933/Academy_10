@@ -13,6 +13,14 @@ namespace Academy.Esercitazione
         {
             this.products_list.Add(new Prodotto(desc, price, disc, code));
         }
+        public void AggiungiProd(string desc)
+        {
+            this.products_list.Add(new Prodotto(desc));
+        }
+        public void AggiungiProd(string desc, double price, double disc)
+        {
+            this.products_list.Add(new Prodotto(desc, price, disc));
+        }
         public Negozio(string nneg, string nprop,string desc, double price, int code, double disc): base(desc, price,disc, code )
         {
             this.products_list.Add(new Prodotto(desc,price,disc,code));
