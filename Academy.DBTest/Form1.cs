@@ -52,6 +52,22 @@ namespace Academy.DBTest
             string item = this.lst_clienti.SelectedItem.ToString();
             string[] splittedString = item.Split(' ');
             int ID = Int32.Parse(splittedString[0]);
+
+            string connectionString = @"Data Source = WINAPMGUDJIV7BS\SQLEXPRESS; Initial Catalog = AcademyDB; Integrated Security = True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+
+                string sqlClients_ContiCorrtext = "SELECT co.Saldo FROM AcademyDB.dbo.Clients AS c INNER JOIN AcademyDB.dbo.ContiCorrenti AS co ON c.ID=co.Owner where c.ID =" + ID;
+                SqlCommand cmd = new SqlCommand(sqlClients_ContiCorrtext, conn);
+
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                this.lst_conticorrente.Items.Add(dr[0]);
+
+                conn.Close();
+            }
         }
     }
 }
