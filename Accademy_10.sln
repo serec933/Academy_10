@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Academy.Temperature", "Acad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.DBTest", "Academy.DBTest\Academy.DBTest.csproj", "{14FB1D33-E045-4616-BAC7-6F8FAF4FEF76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy.Esercitazione", "Academy.Esercitazione\Academy.Esercitazione.csproj", "{B190DD36-5CC5-43F1-ADBA-214099A049E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{14FB1D33-E045-4616-BAC7-6F8FAF4FEF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14FB1D33-E045-4616-BAC7-6F8FAF4FEF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14FB1D33-E045-4616-BAC7-6F8FAF4FEF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B190DD36-5CC5-43F1-ADBA-214099A049E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B190DD36-5CC5-43F1-ADBA-214099A049E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B190DD36-5CC5-43F1-ADBA-214099A049E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B190DD36-5CC5-43F1-ADBA-214099A049E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
