@@ -15,10 +15,10 @@ namespace Academy.Esercitazione
 
         private static void TestNegozio()
         {
-            Negozio neg = new Negozio("nome", "cognome");
+            Negozio neg = new Negozio("NEGOZIO", "PROPRIETARIO");
             Console.WriteLine("Il nome del negozio è: " + neg.NomeNegozio + " e il proprietario si chiama:" + neg.NomeProprietario);
             int count = 0;
-            while (count < 3)
+            while (count < 1)
             {
                 Console.WriteLine("Inserisci la descrizione del prodotto, il prezzo, lo sconto e il codice divisi da spazio: ");
                 string line = Console.ReadLine();
