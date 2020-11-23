@@ -7,8 +7,8 @@ namespace Academy.Esercitazione
     {
         static void Main(string[] args)
         {
-           //TestProdotto();
-           //TestNegozio();
+           TestProdotto();
+           TestNegozio();
            TestProdottoOfferta();
            
         }

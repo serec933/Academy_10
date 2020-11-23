@@ -16,7 +16,7 @@ namespace Academy.MailSystem
         }
         public void mm_MailArrived(Object sender, MailEventArgs e)
         {
-            Console.WriteLine("i'm a FAX \r\n Mail From: {0}, Mail to: {1}, \r\n Subject: {2}, Body: {3}",
+            Console.WriteLine("i'm a PRINTER \r\n Mail From: {0}, Mail to: {1}, \r\n Subject: {2}, Body: {3}",
                                 e.From, e.To, e.Subject, e.Body);
         }
     }
